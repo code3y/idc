@@ -5,12 +5,10 @@ import com.code3y.idc.service.common.util.NetUtil;
 import com.code3y.idc.service.model.entity.WorkerNode;
 import com.code3y.idc.service.service.WorkerNodeService;
 import com.code3y.idc.service.mapper.WorkerNodeMapper;
-import org.bouncycastle.util.IPAddress;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.net.InetAddress;
 import java.util.Date;
 
 /**

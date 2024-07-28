@@ -5,9 +5,11 @@ import com.code3y.idc.service.buffer.BufferPaddingExecutor;
 import com.code3y.idc.service.model.po.BitsAllocator;
 import com.code3y.idc.service.buffer.CircleBuffer;
 import com.code3y.idc.service.service.WorkerNodeService;
+
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -18,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  * @Author: code3y
  * @Description: TODO
  */
-@Service
+@DubboService
 public class IDCreate implements IIDCreate, InitializingBean {
     protected int timeBits = 28;
     protected int workerBits = 22;
