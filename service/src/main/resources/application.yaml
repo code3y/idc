@@ -1,17 +1,28 @@
+server:
+  port: 8080
+
 spring:
   application:
-    name: code3y_idc
-  cloud:
-    nacos:
-      discovery:
-        server-addr:
+    name: dubbo-provider
+  main:
+    # 重复定义bean的问题
+    allow-bean-definition-overriding: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url:
     username:
     password:
-server:
-  port: 8080
+
+dubbo:
+  application:
+    name: dubbo-provider-111112131
+  registry:
+    address:
+  protocol:
+    name: dubbo
+    port: 20880
+
+
 
 buffer:
   executor:
